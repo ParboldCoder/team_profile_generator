@@ -15,6 +15,7 @@ The Team Profile Generator is a command-line application designed for crafting a
 * [Installation](#installation)
 * [Usage](#usage)
 * [Tests](#tests)
+* [Sources](#sources)
 
 ## Installation
 
@@ -45,3 +46,10 @@ To run tests for the Team Profile Generator:
 3. Run the tests: `npm test`.
 
 Ensure all tests pass without errors. Review the test logs for any issues and address them accordingly.
+
+## Sources
+
+* [Node.js](https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi) - Official Node.js website
+* [npm](https://www.https://www.npmjs.com/package/inquirer) - Official npm website
+* [W3Schools](https:/https://www.w3schools.com/nodejs/) - W3Schools Online Web Tutorials
+* [Google.co.uk](https://www.google.co.uk/) - Google UK
