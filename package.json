@@ -1,7 +1,17 @@
 {
+  "name": "team_profile_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
   "dependencies": {
-    "inquirer": "^9.2.15"
+    "inquirer": "^8.2.6"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "jest": "^29.7.0"
   }

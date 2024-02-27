@@ -2,13 +2,19 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 const { Manager, Engineer, Intern } = require("./lib");
+const render = require("./src/page-template.js");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 
-const render = require("./src/page-template.js");
-
 const team = [];
+
+const ensureDirectoryExists = (filePath) => {
+    const dirname = path.dirname(filePath);
+    if (!fs.existsSync(dirname)) {
+        fs.mkdirSync(dirname, { recursive: true });
+    }
+};
 
 async function addEmployee(role) {
   const questions = [
@@ -40,6 +46,7 @@ async function promptUser() {
 
 async function generateHTML() {
   const html = render(team);
+  ensureDirectoryExists(outputPath); // Ensure directory exists
   fs.writeFileSync(outputPath, html);
   console.log("HTML successfully generated!");
 }
